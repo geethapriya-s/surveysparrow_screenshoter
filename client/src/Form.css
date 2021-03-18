@@ -1,0 +1,343 @@
+input {
+    /* position: absolute;
+    top:30%;
+    left:40%; */
+    align-items: center;
+    text-align: center;
+}
+
+button,a{
+    /* position: absolute;
+    top:70%; 
+    left:45%;*/
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 150%;
+  background-color: #000;
+  color: #03e9f4;
+  border:0px;
+  box-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4,
+  0 0 200px #03e9f4;
+    font-size: 24px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    border-radius: 20%;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+}
+button:hover{
+    background:#03e9f4;
+    color:#000;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+/* button span{
+    position: absolute; 
+    display: block;
+
+} */
+button span:nth-child(1){
+    top:0;
+     left:-100%; 
+    width:100%;
+    height:2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left:-100%;
+    }
+    50%,100%{
+        left:100%;
+    }
+}
+button span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:2px;
+    height:100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay:0.1s;
+}
+@keyframes animate2{
+    0%{
+        top:-100%;
+    }
+    50%,100%{
+        top:100%;
+    }
+}
+button span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay:0.2s;
+}
+@keyframes animate3{
+    0%{
+        right:-100%;
+    }
+    50%,100%{
+        right:100%;
+    }
+}
+button span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay:0.3s;
+}
+@keyframes animate4{
+    0%{
+        bottom:-100%;
+    }
+    50%,100%{
+        bottom:100%;
+    }
+}
+.one{
+    /* position: absolute;
+    top:50%;
+    left:40%; */
+    align-items: center;
+    text-align: center;
+}
+.two{
+    /* position: absolute;
+    top:50%;
+    left:60%; */
+    align-items: center;
+    text-align: center;
+}
+
+
+#rangeValue {
+    /* position: absolute;
+    top:53%;
+      left:35%; */
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: #03e9f4;
+    font-weight: 400;
+  }
+  .range {
+      /* position: absolute;
+      top:60%;
+      left:45%; */
+    width: 150px;
+    height: 30px;
+    -webkit-appearance: none;
+    background: #111;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  }
+  .range:hover{
+    background:#03e9f4;
+    color:#050801;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;}
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #03e9f4;
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  } 
+  
+
+  .box{
+      background-color: #000;
+      border:0;
+      align-items: center;
+      margin:20px auto;
+      text-align: center;
+      font-size: 1rem;
+      border:2px solid #3498db;
+      box-shadow: 0 0 5px #03e9f4,
+      0 0 25px #03e9f4,
+      0 0 50px #03e9f4,
+      0 0 200px #03e9f4;
+      padding: 14px 10px;
+      width: 20%;
+      height:10%;
+      outline: none;
+      color: #03e9f4;
+      border-radius: 24px;
+      transition: 0.25s;
+
+  }
+  .box:focus{
+      width:40% ;
+      border-color: #03e9f4;
+      color: #03e9f4;
+  }
+  
+  .aligns1{
+    position: absolute;
+    top:30%;
+    left: 5%;
+    align-items: center;
+      width: 90%;
+      height: 70%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .format{
+    /* position: absolute;
+    z-index: 2;
+    left:50%;
+    top: 47%; */
+    text-align: center;
+  }
+  
+  .format label{
+    color: #50BFE6;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  
+  .format input{
+    position: relative;
+    width:30px;
+    height:30px;
+    margin: 10px;
+    outline: none;
+    background-color: #2f3640;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.1),
+                 5px 5px 10px rgba(0,0,0,1),
+                 inset -2px -2px 5px rgba(255,255,255,0.1),
+                 inset 2px 2px 5px rgba(0,0,0,0.5),
+                 0 0 0 2px #1f1f1f;
+    transition: 0.9s;
+  }
+  
+  input[type="checkbox"]:checked{
+    background: #50BFE6;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  }
+  
+ 
+  .row1{
+    /* position: absolute;left: -60px; */
+}  
+.row2{
+    /* position: absolute;left: 30px; */
+} 
+.divImage{
+    width:fit-content;
+    height: fit-content;
+}
+.image{
+    max-width: 100%;
+}
+@media screen and (max-width: 579px){
+    button{
+    width: 40%;
+    height: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 914px){
+    .box{
+        width:40%;
+    }
+  }
+  @media screen and (max-width: 499px){
+    .box{
+        width:60%;
+    }
+  }
+
+  
+  #loader {
+
+      /* animation: loader 5s linear infinite;   */
+
+  position: absolute;
+  
+  top: calc(70% - 20px);
+  left: calc(50% - 20px);  
+}
+@keyframes loader {
+  0% { left: -100px }
+  100% { left: 110%; }
+}
+#box {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  animation: animate .5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  border-radius: 3px;
+  box-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4,
+  0 0 200px #03e9f4;
+}
+@keyframes animate {
+  17% { border-bottom-right-radius: 3px; }
+  25% { transform: translateY(9px) rotate(22.5deg); }
+  50% {
+    transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+    border-bottom-right-radius: 40px;
+  }
+  75% { transform: translateY(9px) rotate(67.5deg); }
+  100% { transform: translateY(0) rotate(90deg); }
+} 
+#shadow { 
+  width: 50px;
+  height: 5px;
+  background: #000;
+  opacity: 0.1;
+  position: absolute;
+  top: 59px;
+  left: 0; 
+  border-radius: 50%;
+  animation: shadow .5s linear infinite;
+}
+@keyframes shadow {
+  50% {
+    transform: scale(1.2,1);
+  }
+}
+
+.error{
+  color:red;
+}
+
+
